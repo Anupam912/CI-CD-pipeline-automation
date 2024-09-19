@@ -1,0 +1,51 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/                          
+*.env                           
+
+# Ignore Python cache and compiled files
+*.pytest_cache/
+pytest_cache/
+*.log                           
+
+# Docker-related ignores
+docker-compose.override.yml     
+docker-compose.local.yml        
+*.dockerignore                  
+**/Dockerfile                   
+
+# PowerShell-specific ignores
+*.ps1~
+*.ps1.log                       
+*.ps1.cache                     
+*.psm1                          
+
+# GitHub Actions Secrets (Don't commit private keys or sensitive data)
+.github/secrets/               
+*.pem                          
+id_rsa*                        
+
+# Sensitive information or secrets (Make sure these are stored securely)
+.env                             
+.env.*                           
+secrets.json                     
+config/secrets/                  
+
+# Ignore output of build steps
+build/
+dist/
+*.egg-info/
+
+# Ignore OS-specific files
+.DS_Store                        
+Thumbs.db                        
+
+# Ignore VSCode settings (if applicable)
+.vscode/
+
+# Logs and temporary files
+*.log                           
+tmp/                            
